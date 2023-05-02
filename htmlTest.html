@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+
+    <form action="/where">
+        <div>
+            <label for="fistname">First Name</label>
+            <input type="text" name="firstname" id="firstname" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required>
+        </div>
+
+        <p>Select a Race:</p>
+        <div>
+            <input type="radio" name="race" id="5k" value="5k">
+            <label for="5k">Fun Run 5K</label>
+            <!-- 편의상 id="5k"라고 적었지만 id는 숫자가 먼저와선 X -->
+        </div>
+        <div>
+            <input type="radio" name="race" id="Half" value="Half">
+            <label for="Half">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="Full" value="Full">
+            <label for="Full">Full Marathon</label>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="passwrod" required>
+        </div>
+
+        <div>
+            <label for="gruop">Select Age gruop</label>
+            <select id="gruop" name="gruop">
+                <option value="kids">under 18</option>
+                <option value="tt">20~30</option>
+                <option value="adult">over 30</option>
+            </select>
+        </div>
+
+        <button>Register</button>
+    </form>
+</body>
+
+</html>

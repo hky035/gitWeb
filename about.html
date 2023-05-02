@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page </title>
+</head>
+
+<body>
+    <h1>about page</h1>
+
+    <h2>table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">animal</th>
+                <th colspan="2">size</th>
+                <th rowspan="2">fly</th>
+            </tr>
+            <tr>
+                <td>kg</td>
+                <td>found</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostrich td1</td>
+                <td>104</td>
+                <td>(230)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>sumarOstrich td2</td>
+                <td>100</td>
+                <td>(205)</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>cro</td>
+                <td>20</td>
+                <td>(30)</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>form</h2>
+    <p>form의 속성 action = 데이터를 보낼 곳</p>
+    <form action="/tacos">
+        <p>
+            <label for="id">Enter ID</label>
+            <input type="text" id="id" placeholder="placeholder(임시텍스트)" name="userid">
+        </p>
+        <p>
+            <label for="password">Enter Password</label>
+            <input type="password" id="password" placeholder="password">
+        </p>
+        <input type="color">
+        <input type="month">
+        <button> submit</button>
+        <button type="button"> button </button>
+    </form>
+
+    <label for="cheese">Do you like cheeese?</label>
+    <input type="checkbox" name="cheese" id="cheese">
+
+    <hr>
+    <h2>Hijacking Search</h2>
+    <form action="https://www.reddit.com/search/?q=silkie">
+        <input type="text" name="q">
+        <button>search Reddit</button>
+    </form>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>search Google</button>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>search Youtube</button>
+    </form>
+    <hr>
+
+    <h2>more input</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agrre_tos" id="agree" checked>
+        <label for="agree">Agree</label>
+
+        <label for="xs">xs</label>
+        <input type="radio" name="size" id="xs" value="helloxs">
+        <label for="s">s</label>
+        <input type="radio" name="size" id="s">
+        <label for="L">L</label>
+        <input type="radio" name="size" id="L">
+        <button>submit</button>
+
+        <label for="">please select food</label>
+        <select name="meal" id="meal">
+            <option value="fish">Fish</option>
+            <option value="veget">vegetarian</option>
+            <option value="steack">steak</option>
+        </select>
+        <hr>
+        <h2>Validations 유효성 검사</h2>
+        <form action="/birds">
+            <div>
+                <label for="first">first name</label>
+                <input type="text" name="first" id="first" required>
+            </div>
+            <div>
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="10">
+            </div>
+            <div>
+                <input type="email" required>
+            </div>
+            <div>
+                <input type="url" required>
+            </div>
+            <button>submit</button>
+        </form>
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
