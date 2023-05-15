@@ -1,0 +1,39 @@
+section {
+    background-color: skyblue;
+    width: 250px;
+    height: 250px;
+}
+
+div {
+    text-align: center;
+    background-color: brown;
+    width: 50%;
+    height: 50%;
+    /* 여기서 단위 %는 부모요소 section의 50%로 적용된다. */
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+h2 {
+    font-size: 2em;
+    /* 부모 폰트의 2배  */
+    /* em은 부모 글꼴에 대비한 현재 요소의 글꼴 크기이다.  */
+
+}
+
+article {
+    font-size: 30px;
+}
+
+button {
+    background-color: skyblue;
+    font-size: 1em;
+    /* em을 활용하면 부모가 늘어나면 거기에 맞춰서 할 수 있다. */
+    /* em 현재 요소의 폰트 크기를 나타내면 다른 요소들에게 em을 사용해도
+       폰트의 크기에 맞추어 적용된다. */
+    border-radius: 1em;
+}
