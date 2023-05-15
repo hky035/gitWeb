@@ -1,0 +1,25 @@
+h1 {
+    background-color: skyblue;
+    border: 3px solid black;
+    display: inline;
+    /*  인라인요소로 바꿈 */
+}
+
+p span {
+    background-color: #eee8aa;
+    border: 1px solid black;
+
+    width: 500px;
+    /* 요소가 인라인 디스플레이라면 너비나 높이는 무시된다. */
+    padding: 10px;
+}
+
+div {
+    background-color: olivedrab;
+    border: 1px solid black;
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}

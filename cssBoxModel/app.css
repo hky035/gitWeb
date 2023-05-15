@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+}
+
+div {
+    width: 200PX;
+}
+
+#one {
+    width: 200px;
+    height: 200px;
+    /* border style가지 입력해야 border를 확인할 수 있음 */
+    background-color: lightskyblue;
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    /*border를 박스 안으로 만들어지게 해줌*/
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+}
+
+#two {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border-width: 20px;
+    border-color: yellow;
+    border-style: dashed;
+    border-left-color: red;
+    margin: 100px;
+}
+
+
+#three {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 30px dashed grey;
+    border-left-style: dotted;
+    border-radius: 10px 50px 100px 200px;
+}
+
+.card {
+    width: 210px;
+    border-width: 5px;
+    border-color: grey;
+    border-style: solid;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border-width: 5px;
+    border-color: rgb(236, 183, 191);
+    border-style: solid;
+    border-radius: 50%;
+}
+
+h1 {
+    width: 200px;
+    background-color: pink;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+button {
+    padding: 0 30px;
+}
